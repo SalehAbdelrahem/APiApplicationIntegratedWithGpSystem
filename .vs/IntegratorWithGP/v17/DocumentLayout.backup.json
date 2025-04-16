@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\WebAPI_integratorWithGP\\IntegratorWithGP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2275605C-6383-4BC9-A68E-BF7EBACCFD6B}|IntegratorWithGp.Services\\IntegratorWithGp.Services.csproj|e:\\webapi_integratorwithgp\\integratorwithgp\\integratorwithgp.services\\services\\purchasingservices\\rmtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2275605C-6383-4BC9-A68E-BF7EBACCFD6B}|IntegratorWithGp.Services\\IntegratorWithGp.Services.csproj|solutionrelative:integratorwithgp.services\\services\\purchasingservices\\rmtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{540344F6-5A44-413A-ABD5-8C0D882FA305}|IntegratorWithGp.Core\\IntegratorWithGp.Core.csproj|e:\\webapi_integratorwithgp\\integratorwithgp\\integratorwithgp.core\\models\\purchasing\\transactionentries\\payabletransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{540344F6-5A44-413A-ABD5-8C0D882FA305}|IntegratorWithGp.Core\\IntegratorWithGp.Core.csproj|solutionrelative:integratorwithgp.core\\models\\purchasing\\transactionentries\\payabletransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2275605C-6383-4BC9-A68E-BF7EBACCFD6B}|IntegratorWithGp.Services\\IntegratorWithGp.Services.csproj|e:\\webapi_integratorwithgp\\integratorwithgp\\integratorwithgp.services\\services\\purchasingservices\\pmtransactiontaxinsert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2275605C-6383-4BC9-A68E-BF7EBACCFD6B}|IntegratorWithGp.Services\\IntegratorWithGp.Services.csproj|solutionrelative:integratorwithgp.services\\services\\purchasingservices\\pmtransactiontaxinsert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2275605C-6383-4BC9-A68E-BF7EBACCFD6B}|IntegratorWithGp.Services\\IntegratorWithGp.Services.csproj|e:\\webapi_integratorwithgp\\integratorwithgp\\integratorwithgp.services\\services\\purchasingservices\\purchasingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2275605C-6383-4BC9-A68E-BF7EBACCFD6B}|IntegratorWithGp.Services\\IntegratorWithGp.Services.csproj|solutionrelative:integratorwithgp.services\\services\\purchasingservices\\purchasingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2275605C-6383-4BC9-A68E-BF7EBACCFD6B}|IntegratorWithGp.Services\\IntegratorWithGp.Services.csproj|e:\\webapi_integratorwithgp\\integratorwithgp\\integratorwithgp.services\\services\\sales\\salesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2275605C-6383-4BC9-A68E-BF7EBACCFD6B}|IntegratorWithGp.Services\\IntegratorWithGp.Services.csproj|solutionrelative:integratorwithgp.services\\services\\sales\\salesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{540344F6-5A44-413A-ABD5-8C0D882FA305}|IntegratorWithGp.Core\\IntegratorWithGp.Core.csproj|e:\\webapi_integratorwithgp\\integratorwithgp\\integratorwithgp.core\\enums\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{540344F6-5A44-413A-ABD5-8C0D882FA305}|IntegratorWithGp.Core\\IntegratorWithGp.Core.csproj|solutionrelative:integratorwithgp.core\\enums\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE4E1D78-3D5E-4B7B-BC9A-BE8F4693F328}|IntegratorWithGP\\IntegratorWithGP.csproj|e:\\webapi_integratorwithgp\\integratorwithgp\\integratorwithgp\\controllers\\salescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE4E1D78-3D5E-4B7B-BC9A-BE8F4693F328}|IntegratorWithGP\\IntegratorWithGP.csproj|solutionrelative:integratorwithgp\\controllers\\salescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2275605C-6383-4BC9-A68E-BF7EBACCFD6B}|IntegratorWithGp.Services\\IntegratorWithGp.Services.csproj|e:\\webapi_integratorwithgp\\integratorwithgp\\integratorwithgp.services\\iservices\\isales\\isalesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2275605C-6383-4BC9-A68E-BF7EBACCFD6B}|IntegratorWithGp.Services\\IntegratorWithGp.Services.csproj|solutionrelative:integratorwithgp.services\\iservices\\isales\\isalesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PMTransactionTaxInsert.cs",
+              "DocumentMoniker": "E:\\WebAPI_integratorWithGP\\IntegratorWithGP\\IntegratorWithGp.Services\\Services\\PurchasingServices\\PMTransactionTaxInsert.cs",
+              "RelativeDocumentMoniker": "IntegratorWithGp.Services\\Services\\PurchasingServices\\PMTransactionTaxInsert.cs",
+              "ToolTip": "E:\\WebAPI_integratorWithGP\\IntegratorWithGP\\IntegratorWithGp.Services\\Services\\PurchasingServices\\PMTransactionTaxInsert.cs",
+              "RelativeToolTip": "IntegratorWithGp.Services\\Services\\PurchasingServices\\PMTransactionTaxInsert.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T22:55:37.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RMTransaction.cs",
+              "DocumentMoniker": "E:\\WebAPI_integratorWithGP\\IntegratorWithGP\\IntegratorWithGp.Services\\Services\\PurchasingServices\\RMTransaction.cs",
+              "RelativeDocumentMoniker": "IntegratorWithGp.Services\\Services\\PurchasingServices\\RMTransaction.cs",
+              "ToolTip": "E:\\WebAPI_integratorWithGP\\IntegratorWithGP\\IntegratorWithGp.Services\\Services\\PurchasingServices\\RMTransaction.cs",
+              "RelativeToolTip": "IntegratorWithGp.Services\\Services\\PurchasingServices\\RMTransaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T22:54:52.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PayableTransaction.cs",
+              "DocumentMoniker": "E:\\WebAPI_integratorWithGP\\IntegratorWithGP\\IntegratorWithGp.Core\\Models\\Purchasing\\TransactionEntries\\PayableTransaction.cs",
+              "RelativeDocumentMoniker": "IntegratorWithGp.Core\\Models\\Purchasing\\TransactionEntries\\PayableTransaction.cs",
+              "ToolTip": "E:\\WebAPI_integratorWithGP\\IntegratorWithGP\\IntegratorWithGp.Core\\Models\\Purchasing\\TransactionEntries\\PayableTransaction.cs",
+              "RelativeToolTip": "IntegratorWithGp.Core\\Models\\Purchasing\\TransactionEntries\\PayableTransaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T19:59:15.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ISalesService.cs",
+              "DocumentMoniker": "E:\\WebAPI_integratorWithGP\\IntegratorWithGP\\IntegratorWithGp.Services\\IServices\\ISales\\ISalesService.cs",
+              "RelativeDocumentMoniker": "IntegratorWithGp.Services\\IServices\\ISales\\ISalesService.cs",
+              "ToolTip": "E:\\WebAPI_integratorWithGP\\IntegratorWithGP\\IntegratorWithGp.Services\\IServices\\ISales\\ISalesService.cs",
+              "RelativeToolTip": "IntegratorWithGp.Services\\IServices\\ISales\\ISalesService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T20:57:27.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SalesController.cs",
+              "DocumentMoniker": "E:\\WebAPI_integratorWithGP\\IntegratorWithGP\\IntegratorWithGP\\Controllers\\SalesController.cs",
+              "RelativeDocumentMoniker": "IntegratorWithGP\\Controllers\\SalesController.cs",
+              "ToolTip": "E:\\WebAPI_integratorWithGP\\IntegratorWithGP\\IntegratorWithGP\\Controllers\\SalesController.cs",
+              "RelativeToolTip": "IntegratorWithGP\\Controllers\\SalesController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAEwDcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T20:56:09.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "E:\\WebAPI_integratorWithGP\\IntegratorWithGP\\IntegratorWithGp.Core\\Enums\\Enums.cs",
+              "RelativeDocumentMoniker": "IntegratorWithGp.Core\\Enums\\Enums.cs",
+              "ToolTip": "E:\\WebAPI_integratorWithGP\\IntegratorWithGP\\IntegratorWithGp.Core\\Enums\\Enums.cs",
+              "RelativeToolTip": "IntegratorWithGp.Core\\Enums\\Enums.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAlwAsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T20:39:08.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SalesService.cs",
+              "DocumentMoniker": "E:\\WebAPI_integratorWithGP\\IntegratorWithGP\\IntegratorWithGp.Services\\Services\\Sales\\SalesService.cs",
+              "RelativeDocumentMoniker": "IntegratorWithGp.Services\\Services\\Sales\\SalesService.cs",
+              "ToolTip": "E:\\WebAPI_integratorWithGP\\IntegratorWithGP\\IntegratorWithGp.Services\\Services\\Sales\\SalesService.cs",
+              "RelativeToolTip": "IntegratorWithGp.Services\\Services\\Sales\\SalesService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAADAvxoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T21:51:25.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PurchasingService.cs",
+              "DocumentMoniker": "E:\\WebAPI_integratorWithGP\\IntegratorWithGP\\IntegratorWithGp.Services\\Services\\PurchasingServices\\PurchasingService.cs",
+              "RelativeDocumentMoniker": "IntegratorWithGp.Services\\Services\\PurchasingServices\\PurchasingService.cs",
+              "ToolTip": "E:\\WebAPI_integratorWithGP\\IntegratorWithGP\\IntegratorWithGp.Services\\Services\\PurchasingServices\\PurchasingService.cs",
+              "RelativeToolTip": "IntegratorWithGp.Services\\Services\\PurchasingServices\\PurchasingService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAowB4AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T19:50:41.614Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

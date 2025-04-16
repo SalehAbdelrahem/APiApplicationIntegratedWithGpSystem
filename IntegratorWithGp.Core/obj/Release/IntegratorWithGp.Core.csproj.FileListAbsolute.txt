@@ -1,0 +1,9 @@
+E:\WebAPI_integratorWithGP\IntegratorWithGP\IntegratorWithGp.Core\bin\Release\IntegratorWithGp.Core.dll
+E:\WebAPI_integratorWithGP\IntegratorWithGP\IntegratorWithGp.Core\bin\Release\IntegratorWithGp.Core.pdb
+E:\WebAPI_integratorWithGP\IntegratorWithGP\IntegratorWithGp.Core\bin\Release\Newtonsoft.Json.dll
+E:\WebAPI_integratorWithGP\IntegratorWithGP\IntegratorWithGp.Core\bin\Release\Newtonsoft.Json.xml
+E:\WebAPI_integratorWithGP\IntegratorWithGP\IntegratorWithGp.Core\obj\Release\IntegratorWithGp.Core.csproj.AssemblyReference.cache
+E:\WebAPI_integratorWithGP\IntegratorWithGP\IntegratorWithGp.Core\obj\Release\IntegratorWithGp.Core.csproj.CoreCompileInputs.cache
+E:\WebAPI_integratorWithGP\IntegratorWithGP\IntegratorWithGp.Core\obj\Release\Integrat.6F0F771C.Up2Date
+E:\WebAPI_integratorWithGP\IntegratorWithGP\IntegratorWithGp.Core\obj\Release\IntegratorWithGp.Core.dll
+E:\WebAPI_integratorWithGP\IntegratorWithGP\IntegratorWithGp.Core\obj\Release\IntegratorWithGp.Core.pdb
