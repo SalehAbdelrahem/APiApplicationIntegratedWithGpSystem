@@ -64,6 +64,7 @@
     <Compile Include="IServices\IEconnectServices.cs" />
     <Compile Include="IServices\IItemServices\IItemService.cs" />
     <Compile Include="IServices\IItemVendorServices\IItemVendorService.cs" />
+    <Compile Include="IServices\IPaymentServices\IPaymentService.cs" />
     <Compile Include="IServices\IPurchasingServices\IPurchasingService.cs" />
     <Compile Include="IServices\IReceivingTransactionEntityServices\IReceivingTransactionEntityService.cs" />
     <Compile Include="IServices\ISalesTransactionServices\ISalesTransactionService.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Services\EconnectServices.cs" />
     <Compile Include="Services\ItemServices\ItemService.cs" />
     <Compile Include="Services\ItemVendorServices\ItemVendorService.cs" />
+    <Compile Include="Services\PaymentServices\PaymentService.cs" />
     <Compile Include="Services\PurchasingServices\PMTransactionTaxInsert.cs" />
     <Compile Include="Services\PurchasingServices\PurchasingService.cs" />
     <Compile Include="Services\PurchasingServices\RMTransaction.cs" />

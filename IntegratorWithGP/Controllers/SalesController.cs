@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 using IntegratorWithGp.Core.DTO.ResponseApi;
-using IntegratorWithGp.Core.Models.Purchasing.TransactionEntries;
 using IntegratorWithGp.Core.Models.SalesTransactions;
-using IntegratorWithGp.Services.IServices.IPurchasingServices;
 using IntegratorWithGp.Services.IServices.ISales;
 
 namespace IntegratorWithGP.Controllers
@@ -51,13 +46,13 @@ namespace IntegratorWithGP.Controllers
             }
         }
 
-        [HttpPost]
-        [Route(nameof(Test))]
-        public IHttpActionResult Test() {
+        //[HttpPost]
+        //[Route(nameof(Test))]
+        //public IHttpActionResult Test() {
 
-            
-            return Ok(_salesService.test()); 
-        }
+
+        //    return Ok(_salesService.test()); 
+        //}
 
     }
 }

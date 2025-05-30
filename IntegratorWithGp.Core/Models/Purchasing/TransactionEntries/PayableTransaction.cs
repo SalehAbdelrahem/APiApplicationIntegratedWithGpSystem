@@ -16,24 +16,25 @@ namespace IntegratorWithGp.Core.Models.Purchasing.TransactionEntries
         public string CURNCYID { get; set; }
         public string TAXSCHID { get; set; }
         public decimal PURCHASESAMOUNT { get; set; }
-        public decimal TAXAMOUNT { get; set; }
+       // public decimal TAXAMOUNT { get; set; }
         public decimal CHARGEAMOUNT { get; set; }
 
 
         public static implicit operator taPMTransactionInsert(PayableTransaction payableTransaction) =>
        new taPMTransactionInsert
        {
+
            BACHNUMB= payableTransaction.BACHNUMBER,
            VENDORID = payableTransaction.VENDORID,
            VCHNUMWK=payableTransaction.VOUCHERNUMBER,
            DOCTYPE= payableTransaction.DOCUMENTTYPE,
            DOCNUMBR = payableTransaction.DOCUMENTNUMBER,
-           DOCDATE=payableTransaction.DOCUMENTDATE,
+           DOCDATE  =payableTransaction.DOCUMENTDATE,
            CURNCYID = payableTransaction.CURNCYID,
            TAXSCHID = payableTransaction.TAXSCHID,
-           PRCHAMNT= payableTransaction.PURCHASESAMOUNT,
-           DOCAMNT= payableTransaction.DOCUMENTAMOUNT,
-           TAXAMNT= payableTransaction.TAXAMOUNT,
+           PRCHAMNT = payableTransaction.PURCHASESAMOUNT,
+           DOCAMNT = payableTransaction.DOCUMENTAMOUNT,
+           //TAXAMNT = payableTransaction.TAXAMOUNT,
            CHRGAMNT= payableTransaction.CHARGEAMOUNT
          
        };

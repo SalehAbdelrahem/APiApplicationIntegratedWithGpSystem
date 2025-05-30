@@ -8,7 +8,7 @@ namespace IntegratorWithGp.Services.services
 {
     public class EconnectServices
     {
-        public async Task<DataTable> OpenConnectionGp(string sql)
+        public DataTable OpenConnectionGp(string sql)
         {
             
             if (!string.IsNullOrEmpty(sql))
@@ -19,7 +19,7 @@ namespace IntegratorWithGp.Services.services
                     connection.Open();
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
-                        SqlDataReader dataReader = await command.ExecuteReaderAsync();
+                        SqlDataReader dataReader =  command.ExecuteReader();
                         dataTable.Load(dataReader);
                         dataReader.Close();
                         connection.Close();

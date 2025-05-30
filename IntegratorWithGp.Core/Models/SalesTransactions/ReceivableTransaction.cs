@@ -22,14 +22,14 @@ namespace IntegratorWithGp.Core.Models.SalesTransactions
         public static implicit operator taRMTransaction(ReceivableTransaction receivableTransaction) =>
             new taRMTransaction
             {
-                RMDTYPAL = receivableTransaction.RMDTYPAL,
+                RMDTYPAL = receivableTransaction.RMDTYPAL, 
                 DOCNUMBR = receivableTransaction.DOCUMENTNUMBER,
                 DOCDATE = receivableTransaction.DOCUMENTDATE,
                 BACHNUMB = receivableTransaction.BACHNUMBER,
                 CUSTNMBR = receivableTransaction.CUSOMERNUMBRER,
                 DOCAMNT = receivableTransaction.DOCUMENTAMOUNT,
                 SLSAMNT = receivableTransaction.SALESAMOUNT,
-                TAXAMNT = receivableTransaction.TAXAMOUNT,
+               // TAXAMNT = receivableTransaction.TAXAMOUNT,
                 TAXSCHID = receivableTransaction.TAXSCHID,
                 CURNCYID = receivableTransaction.CURNCYID
             };

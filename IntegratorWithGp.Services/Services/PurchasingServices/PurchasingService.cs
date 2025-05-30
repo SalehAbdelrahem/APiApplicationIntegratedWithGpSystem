@@ -26,18 +26,18 @@ namespace IntegratorWithGp.Services.Services.PurchasingServices
                         new PMTransactionType()
                         {
                             taPMTransactionInsert=PayableTransaction,
-                            taPMTransactionTaxInsert_Items=new taPMTransactionTaxInsert_ItemsTaPMTransactionTaxInsert[]
-                            {
-                                new taPMTransactionTaxInsert_ItemsTaPMTransactionTaxInsert
-                                {
-                                    VENDORID=PayableTransaction.VENDORID,
-                                    VCHRNMBR=PayableTransaction.VOUCHERNUMBER,
-                                    DOCTYPE=PayableTransaction.DOCUMENTTYPE,
-                                    BACHNUMB=PayableTransaction.BACHNUMBER,
-                                    TAXDTLID="W1",
-                                    TAXAMNT=-5
-                                }
-                            }
+                            //taPMTransactionTaxInsert_Items=new taPMTransactionTaxInsert_ItemsTaPMTransactionTaxInsert[]
+                            //{
+                            //    new taPMTransactionTaxInsert_ItemsTaPMTransactionTaxInsert
+                            //    {
+                            //        VENDORID=PayableTransaction.VENDORID,
+                            //        VCHRNMBR=PayableTransaction.VOUCHERNUMBER,
+                            //        DOCTYPE=PayableTransaction.DOCUMENTTYPE,
+                            //        BACHNUMB=PayableTransaction.BACHNUMBER,
+                            //        TAXDTLID="W1",
+                            //        TAXAMNT=-5
+                            //    }
+                            //}
                         }
                     };
                     string xml = GeneralOperationObject.SerializeObject(PayablesTransactionType);

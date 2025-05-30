@@ -7,6 +7,6 @@ namespace IntegratorWithGp.Services.IServices.ISales
     {
 
         GeneralResponceApi InsertReceivableTransaction(ReceivableTransaction receivableTransaction);
-        string test();
+        //string test();
     }
 }

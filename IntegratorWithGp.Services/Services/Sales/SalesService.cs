@@ -25,21 +25,21 @@ namespace IntegratorWithGp.Services.Services.Sales
                         new RMTransactionType()
                         {
                             taRMTransaction=receivableTransaction,
-                            taRMTransactionTaxInsert_Items=new taRMTransactionTaxInsert_ItemsTaRMTransactionTaxInsert[]
-                            {
-                                new taRMTransactionTaxInsert_ItemsTaRMTransactionTaxInsert
-                                {
-                                DOCNUMBR=receivableTransaction.DOCUMENTNUMBER,
-                                TAXDTLID="VATS",
-                                CUSTNMBR=receivableTransaction.CUSOMERNUMBRER,
-                                BACHNUMB=receivableTransaction.BACHNUMBER,
-                                RMDTYPAL=receivableTransaction.RMDTYPAL
-                                ,TAXAMNT=1.40m,
-                                    TAXDTSLS=10m
+                            //taRMTransactionTaxInsert_Items=new taRMTransactionTaxInsert_ItemsTaRMTransactionTaxInsert[]
+                            //{
+                            //    new taRMTransactionTaxInsert_ItemsTaRMTransactionTaxInsert
+                            //    {
+                            //    DOCNUMBR=receivableTransaction.DOCUMENTNUMBER,
+                            //    TAXDTLID="VATS",
+                            //    CUSTNMBR=receivableTransaction.CUSOMERNUMBRER,
+                            //    BACHNUMB=receivableTransaction.BACHNUMBER,
+                            //    RMDTYPAL=receivableTransaction.RMDTYPAL
+                            //    ,TAXAMNT=1.40m,
+                            //        TAXDTSLS=10m
 
 
-                                }
-                            }
+                            //    }
+                            //}
                         }
                     };
                     string xml = GeneralOperationObject.SerializeObject(ReceivableTransactionType);
@@ -99,16 +99,12 @@ namespace IntegratorWithGp.Services.Services.Sales
                 {
                     eConnectOut CashReciet = new eConnectOut()
                     {
-                        //FORLIST = 1,
                         OUTPUTTYPE=2,
-                        INDEX1FROM = "2",
-                        INDEX1TO = "2",
-                       // INDEX1FROM = "TEST",
-                        //INDEX1TO = "TEST",
-                       // DOCTYPE = DOCTYPE.Sales_Transaction.ToString(),
-                      // DATE1= "2024-12-31",
-                        DOCTYPE = DOCTYPE.Cash_Receipt.ToString()
-                       
+                        //FORLIST = 1,
+                        INDEX1FROM = "PYMNT000000000002",
+                        INDEX1TO = "PYMNT000000000002",
+                        //DOCTYPE = DOCTYPE.Cash_Receipt.ToString(),
+                        DOCTYPE = "Cash_Receipt"
                        
                     };
                     eConnectType e = new eConnectType();
@@ -119,6 +115,7 @@ namespace IntegratorWithGp.Services.Services.Sales
                             eConnectOut=CashReciet,
                         }
                     };
+           
                     string xml = GeneralOperationObject.SerializeObject(e);
                    var result= eConnect.GetEntity(ConstantVariables.connectionStringGPWithIntegrated, xml);
                     return result;
