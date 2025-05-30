@@ -1,15 +1,19 @@
 ﻿using System.Web.Http;
+using IntegratorWithGp.Core.DTO.Payments;
 using IntegratorWithGp.Services.Iservices.ICustomerServices;
 using IntegratorWithGp.Services.Iservices.IVendorService;
 using IntegratorWithGp.Services.IServices.IItemServices;
 using IntegratorWithGp.Services.IServices.IItemVendorServices;
+using IntegratorWithGp.Services.IServices.IPaymentServices;
 using IntegratorWithGp.Services.IServices.IPurchasingServices;
 using IntegratorWithGp.Services.IServices.IReceivingTransactionEntityServices;
 using IntegratorWithGp.Services.IServices.ISales;
 using IntegratorWithGp.Services.IServices.ISalesTransactionServices;
+using IntegratorWithGp.Services.services;
 using IntegratorWithGp.Services.Services.CustomerServices;
 using IntegratorWithGp.Services.Services.ItemServices;
 using IntegratorWithGp.Services.Services.ItemVendorServices;
+using IntegratorWithGp.Services.Services.PaymentServices;
 using IntegratorWithGp.Services.Services.PurchasingServices;
 using IntegratorWithGp.Services.Services.ReceivingTransactionEntityServices;
 using IntegratorWithGp.Services.Services.Sales;
@@ -34,6 +38,8 @@ namespace IntegratorWithGP
             container.RegisterType<IItemVendorService, ItemVendorService>();
             container.RegisterType<IPurchasingService, PurchasingService>();
             container.RegisterType<ISalesService, SalesService>();
+           // container.RegisterType<EconnectServices>();
+            container.RegisterType<IPaymentService<ARApplyPaymentDTO>, PaymentService>();
             config.DependencyResolver = new UnityResolver(container);
 
             #region BackGroundJob 

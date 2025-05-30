@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 
 namespace IntegratorWithGp.Services.Services.PaymentServices
 {
@@ -56,22 +57,22 @@ namespace IntegratorWithGp.Services.Services.PaymentServices
                 {
                     result.Add(new ARApplyPaymentDTO
                     {
-                        AmountApplied = row["Amount_Applied"]?.ToString() ?? string.Empty,
-                        AppliedToDocumentDate = row.Field<DateTime>("Applied_to_Document_Date"),
-                        ApplyDocumentDate = row.Field<DateTime>("Apply_Document_Date"),
-                        AppliedToDocTypeName = row["Applied_to_Doc_Type_Name"]?.ToString() ?? string.Empty,
-                        AppliedToDocNumber = row["Applied_to_Doc_Number"]?.ToString() ?? string.Empty,
-                        DocumentNumber = row["Document_Number"]?.ToString() ?? string.Empty,
-                        ExchangeRate = row["Exchange Rate"]?.ToString() ?? string.Empty,
-                        DocumentDate = row["Document_Date"]?.ToString() ?? string.Empty,
-                        //ShipmentNumber = row["Shipment number"]?.ToString() ?? string.Empty,
-                       // Department = row["Department"]?.ToString() ?? string.Empty,
-                       // Branch = row["Branch"]?.ToString() ?? string.Empty,
-                       // ClientOrderNo = row["Client order No"]?.ToString() ?? string.Empty,
-                       // BillOfLading = row["Bill of lading"]?.ToString() ?? string.Empty,
-                        CurrencyId = row["Currency ID"]?.ToString() ?? string.Empty,
-                        CustomerId = row["Customer_ID"]?.ToString() ?? string.Empty,
-                        CustomerName = row["Customer_Name"]?.ToString() ?? string.Empty
+                        AmountApplied = row.Field<decimal>("Amount_Applied"),
+                        AppliedToDocumentDate = row.Field<DateTime?>("Applied_to_Document_Date"),
+                        ApplyDocumentDate = row.Field<DateTime?>("Apply_Document_Date"),
+                        AppliedToDocTypeName = row.Field<string>("Applied_to_Doc_Type_Name"),
+                        AppliedToDocNumber = row.Field<string>("Applied_to_Doc_Number"),
+                        DocumentNumber = row.Field<string>("Document_Number"),
+                        ExchangeRate = row.Field<decimal?>("Exchange Rate"),
+                        DocumentDate = row.Field<DateTime?>("Document_Date"),
+                        ShipmentNumber = row.Field<string>("Shipment number"),
+                        Department = row.Field<string>("Department"),
+                        Branch = row.Field<string>("Branch"),
+                        ClientOrderNo = row.Field<string>("Client order No"),
+                        BillOfLading = row.Field<string>("Bill of lading"),
+                        CurrencyID = row.Field<string>("Currency ID"),
+                        CustomerID = row.Field<string>("Customer_ID"),
+                        CustomerName = row.Field<string>("Customer_Name")
                     });
                 }
 
