@@ -60,19 +60,20 @@ namespace IntegratorWithGp.Services.Services.PaymentServices
                         AmountApplied = row.Field<decimal>("Amount_Applied"),
                         AppliedToDocumentDate = row.Field<DateTime?>("Applied_to_Document_Date"),
                         ApplyDocumentDate = row.Field<DateTime?>("Apply_Document_Date"),
-                        AppliedToDocTypeName = row.Field<string>("Applied_to_Doc_Type_Name"),
-                        AppliedToDocNumber = row.Field<string>("Applied_to_Doc_Number"),
-                        DocumentNumber = row.Field<string>("Document_Number"),
+                        AppliedToDocTypeName = row.Field<string>("Applied_to_Doc_Type_Name")?.Trim(),
+                        AppliedToDocNumber = row.Field<string>("Applied_to_Doc_Number")?.Trim(),
+                        DocumentNumber = row.Field<string>("Document_Number")?.Trim(),
                         ExchangeRate = row.Field<decimal?>("Exchange Rate"),
                         DocumentDate = row.Field<DateTime?>("Document_Date"),
-                        ShipmentNumber = row.Field<string>("Shipment number"),
-                        Department = row.Field<string>("Department"),
-                        Branch = row.Field<string>("Branch"),
-                        ClientOrderNo = row.Field<string>("Client order No"),
-                        BillOfLading = row.Field<string>("Bill of lading"),
-                        CurrencyID = row.Field<string>("Currency ID"),
-                        CustomerID = row.Field<string>("Customer_ID"),
-                        CustomerName = row.Field<string>("Customer_Name")
+                        ShipmentNumber = row.Field<string>("Shipment number")?.Trim(),
+                        Department = row.Field<string>("Department")?.Trim(),
+                        Branch = row.Field<string>("Branch")?.Trim(),
+                        ClientOrderNo = row.Field<string>("Client order No")?.Trim(),
+                        BillOfLading = row.Field<string>("Bill of lading")?.Trim(),
+                        CurrencyID = row.Field<string>("Currency ID")?.Trim(),
+                        CustomerID = row.Field<string>("Customer_ID")?.Trim(),
+                        CustomerName = row.Field<string>("Customer_Name")?.Trim()
+
                     });
                 }
 
