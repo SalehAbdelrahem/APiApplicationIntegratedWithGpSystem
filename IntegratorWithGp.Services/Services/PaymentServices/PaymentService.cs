@@ -6,7 +6,6 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Runtime.Remoting.Messaging;
 
 namespace IntegratorWithGp.Services.Services.PaymentServices
 {
@@ -22,24 +21,25 @@ namespace IntegratorWithGp.Services.Services.PaymentServices
 
         {
 
-            string query = $@"SELECT[Amount_Applied]
-      ,[Applied_to_Document_Date]
-      ,[Apply_Document_Date]
-      ,[Applied_to_Doc_Type_Name]
-      ,[Applied_to_Doc_Number]
-      ,[Document_Number]
-      ,[Exchange Rate]
-      ,[Document_Date]
-      ,[Shipment number]
-      ,[Department]
-      ,[Branch]
-      ,[Client order No]
-      ,[Bill of lading]
-      ,[Currency ID]
-      ,[Customer_ID]
-      ,[Customer_Name]
-            FROM[dbo].[view_AR_Apply_Detail_AR2]
-                                where [Customer_ID]='{customerId}'";
+            string query = $@"SELECT
+                                       [Amount_Applied]
+                                      ,[Applied_to_Document_Date]
+                                      ,[Apply_Document_Date]
+                                      ,[Applied_to_Doc_Type_Name]
+                                      ,[Applied_to_Doc_Number]
+                                      ,[Document_Number]
+                                      ,[Exchange Rate]
+                                      ,[Document_Date]
+                                      ,[Shipment number]
+                                      ,[Department]
+                                      ,[Branch]
+                                      ,[Client order No]
+                                      ,[Bill of lading]
+                                      ,[Currency ID]
+                                      ,[Customer_ID]
+                                      ,[Customer_Name]
+                                       FROM[dbo].[view_AR_Apply_Detail_AR2]
+                                       where [Customer_ID]='{customerId}'";
 
             var data =  _econnectServices.OpenConnectionGp(query);
             var result = new List<ARApplyPaymentDTO>();
@@ -47,7 +47,7 @@ namespace IntegratorWithGp.Services.Services.PaymentServices
             {
                 return new ApiResponse<List<ARApplyPaymentDTO>>
                 {
-                    
+
                     Message = "failed retrieve Data "
                 };
             }
@@ -78,13 +78,13 @@ namespace IntegratorWithGp.Services.Services.PaymentServices
 
                 return new ApiResponse<List<ARApplyPaymentDTO>>
                 {
-                   
+
                     IsSuccess = result.Any(),
-                    Message = "Data retrieved successfully.",
+                    Message = result.Any() ? "Data retrieved successfully." : $"Data Not Found for Customer Id = {customerId}",
                     Data = result
                 };
             }
-          
+
         }
     }
 }
