@@ -1,8 +1,8 @@
 ﻿using Microsoft.Dynamics.GP.eConnect.Serialization;
 
-namespace IntegratorWithGp.Core.Models.SalesTransactions
+namespace IntegratorWithGp.Core.Models.SalesTransactions.Sales
 {
-    public class ReceivableTransaction
+    public class RMTransaction
     {
         public short RMDTYPAL { get; set; }
         public string DOCUMENTNUMBER { get; set; }
@@ -15,11 +15,12 @@ namespace IntegratorWithGp.Core.Models.SalesTransactions
 
         public string CURNCYID { get; set; }
         public string TAXSCHID { get; set; }
-        public decimal TRADEDISCOUNTAMOUNT { get; set; }
-        public decimal FREIGHTAMOUNT { get; set; }
-        public decimal MISCELLANEOUSAMOUNT { get; set; }
-        public decimal TAXAMOUNT { get; set; }
-        public static implicit operator taRMTransaction(ReceivableTransaction receivableTransaction) =>
+        //public decimal TRADEDISCOUNTAMOUNT { get; set; }
+        //public decimal FREIGHTAMOUNT { get; set; }
+        //public decimal MISCELLANEOUSAMOUNT { get; set; }
+        //public decimal TAXAMOUNT { get; set; }
+        public string  DOCUMENTDESCRIPTION  { get; set; }
+        public static implicit operator taRMTransaction(RMTransaction receivableTransaction) =>
             new taRMTransaction
             {
                 RMDTYPAL = receivableTransaction.RMDTYPAL, 
@@ -31,7 +32,8 @@ namespace IntegratorWithGp.Core.Models.SalesTransactions
                 SLSAMNT = receivableTransaction.SALESAMOUNT,
                // TAXAMNT = receivableTransaction.TAXAMOUNT,
                 TAXSCHID = receivableTransaction.TAXSCHID,
-                CURNCYID = receivableTransaction.CURNCYID
+                CURNCYID = receivableTransaction.CURNCYID,
+                DOCDESCR=receivableTransaction.DOCUMENTDESCRIPTION
             };
     }
 }

@@ -3,6 +3,7 @@ using System.Net;
 using System.Web.Http;
 using IntegratorWithGp.Core.DTO.ResponseApi;
 using IntegratorWithGp.Core.Models.SalesTransactions;
+using IntegratorWithGp.Core.Models.SalesTransactions.Sales;
 using IntegratorWithGp.Services.IServices.ISales;
 
 namespace IntegratorWithGP.Controllers
@@ -19,7 +20,7 @@ namespace IntegratorWithGP.Controllers
 
         [HttpPost]
         [Route(nameof(InsertReceivableTransaction))]
-        public IHttpActionResult InsertReceivableTransaction(ReceivableTransaction data)
+        public IHttpActionResult InsertReceivableTransaction(RMTransactionEntry data)
         {
             if (data == null)
             {

@@ -21,7 +21,7 @@ namespace IntegratorWithGP.Controllers
 
         [HttpPost]
         [Route(nameof(PayablesTransactionEntry))]
-        public IHttpActionResult PayablesTransactionEntry(PayableTransaction data)
+        public IHttpActionResult PayablesTransactionEntry(PMTransactionEntry data)
         {
             if (data == null)
             {

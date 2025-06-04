@@ -2,9 +2,12 @@
 using IntegratorWithGp.Core;
 using IntegratorWithGp.Core.DTO.ResponseApi;
 using IntegratorWithGp.Core.Enums;
+using IntegratorWithGp.Core.Extentions.Sales;
 using IntegratorWithGp.Core.Models.SalesTransactions;
+using IntegratorWithGp.Core.Models.SalesTransactions.Sales;
 using IntegratorWithGp.Core.StaticClasses;
 using IntegratorWithGp.Services.IServices.ISales;
+using IntegratorWithGp.Services.Services.PurchasingServices;
 using Microsoft.Dynamics.GP.eConnect;
 using Microsoft.Dynamics.GP.eConnect.Serialization;
 
@@ -12,7 +15,7 @@ namespace IntegratorWithGp.Services.Services.Sales
 {
     public class SalesService : ISalesService
     {
-        public GeneralResponceApi InsertReceivableTransaction(ReceivableTransaction receivableTransaction)
+        public GeneralResponceApi InsertReceivableTransaction(RMTransactionEntry rMTransactionEntry)
         {
             GeneralResponceApi response = new GeneralResponceApi();
             try
@@ -24,22 +27,10 @@ namespace IntegratorWithGp.Services.Services.Sales
                     {
                         new RMTransactionType()
                         {
-                            taRMTransaction=receivableTransaction,
-                            //taRMTransactionTaxInsert_Items=new taRMTransactionTaxInsert_ItemsTaRMTransactionTaxInsert[]
-                            //{
-                            //    new taRMTransactionTaxInsert_ItemsTaRMTransactionTaxInsert
-                            //    {
-                            //    DOCNUMBR=receivableTransaction.DOCUMENTNUMBER,
-                            //    TAXDTLID="VATS",
-                            //    CUSTNMBR=receivableTransaction.CUSOMERNUMBRER,
-                            //    BACHNUMB=receivableTransaction.BACHNUMBER,
-                            //    RMDTYPAL=receivableTransaction.RMDTYPAL
-                            //    ,TAXAMNT=1.40m,
-                            //        TAXDTSLS=10m
+                            taRMTransaction= rMTransactionEntry.RMTransactionInsert,
+                            taRMTransactionTaxInsert_Items=rMTransactionEntry.RMTransactionTaxes.ToRMTransactionsTaxesArray(),
+                            taRMDistribution_Items=rMTransactionEntry.RMDistributions.ToRMDistributionsArray()
 
-
-                            //    }
-                            //}
                         }
                     };
                     string xml = GeneralOperationObject.SerializeObject(ReceivableTransactionType);
@@ -78,6 +69,14 @@ namespace IntegratorWithGp.Services.Services.Sales
                 else if (ex.Message.Contains("Error Number = 7023"))
                 {
                     response.Message = "Error Description = The Tax Schedule ID entered (TAXSCHID) does not exist in the Sales Tax master table - TX00101";
+                }
+                else if (ex.Message.Contains("Error Number = 716"))
+                {
+                    response.Message = "Error Description = Account does not exist for Account Number String (ACTNUMST) passed";
+                } 
+                else if (ex.Message.Contains("Error Number = 712"))
+                {
+                    response.Message = "Error Description = Tax amount (TAXAMNT) does not equal tax details in RM10601";
                 }
                 else
                     response.Message = ex.Message;

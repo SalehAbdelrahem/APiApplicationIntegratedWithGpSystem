@@ -5,6 +5,6 @@ namespace IntegratorWithGp.Services.IServices.IPurchasingServices
 {
     public interface IPurchasingService
     {
-        GeneralResponceApi InsertPayablesTransaction(PayableTransaction PayableTransaction);
+        GeneralResponceApi InsertPayablesTransaction(PMTransactionEntry pMTransactionEntry);
     }
 }
