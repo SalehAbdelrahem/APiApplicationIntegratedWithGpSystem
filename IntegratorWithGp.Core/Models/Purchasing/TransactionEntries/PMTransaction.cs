@@ -17,7 +17,7 @@ namespace IntegratorWithGp.Core.Models.Purchasing.TransactionEntries
         public string TAXSCHID { get; set; }
         public string TRANSACTIONDESCRIPTION{ get; set; }
         public decimal PURCHASESAMOUNT { get; set; }
-       // public decimal TAXAMOUNT { get; set; }
+        public decimal TAXAMOUNT { get; set; }
         public decimal CHARGEAMOUNT { get; set; }
 
         
@@ -36,8 +36,8 @@ namespace IntegratorWithGp.Core.Models.Purchasing.TransactionEntries
            TAXSCHID = payableTransaction.TAXSCHID,
            PRCHAMNT = payableTransaction.PURCHASESAMOUNT,
            DOCAMNT = payableTransaction.DOCUMENTAMOUNT,
-           //TAXAMNT = payableTransaction.TAXAMOUNT,
-           //CHRGAMNT= payableTransaction.CHARGEAMOUNT,
+           TAXAMNT = payableTransaction.TAXAMOUNT,
+           CHRGAMNT = payableTransaction.CHARGEAMOUNT,
            TRXDSCRN=payableTransaction.TRANSACTIONDESCRIPTION,
          
        };

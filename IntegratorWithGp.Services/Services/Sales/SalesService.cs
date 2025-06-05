@@ -78,6 +78,10 @@ namespace IntegratorWithGp.Services.Services.Sales
                 {
                     response.Message = "Error Description = Tax amount (TAXAMNT) does not equal tax details in RM10601";
                 }
+                else if (ex.Message.Contains("Error Number = 698"))
+                {
+                    response.Message = "Error Description = Tax record already exists in the PM Tax Work Table - PM10500";
+                }
                 else
                     response.Message = ex.Message;
             }

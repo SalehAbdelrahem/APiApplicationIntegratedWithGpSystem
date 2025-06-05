@@ -76,9 +76,7 @@
     <Compile Include="Services\ItemServices\ItemService.cs" />
     <Compile Include="Services\ItemVendorServices\ItemVendorService.cs" />
     <Compile Include="Services\PaymentServices\PaymentService.cs" />
-    <Compile Include="Services\PurchasingServices\PMTransactionTaxInsert.cs" />
     <Compile Include="Services\PurchasingServices\PurchasingService.cs" />
-    <Compile Include="Services\PurchasingServices\RMTransaction.cs" />
     <Compile Include="Services\ReceivingTransactionEntityServices\ReceivingTransactionEntityService.cs" />
     <Compile Include="Services\SalesTransactionServices\SalesTransactionService.cs" />
     <Compile Include="Services\Sales\SalesService.cs" />

@@ -78,7 +78,18 @@ namespace IntegratorWithGp.Services.Services.PurchasingServices
                 } 
                 else if (ex.Message.Contains("Error Number = 313"))
                 {
-                    response.Message = " Error Description = Tax table detail does not equal the tax amount";
+                    response.Message = "Error Description = Tax table detail does not equal the tax amount";
+                } 
+                else if (ex.Message.Contains("Error Number = 399"))
+                {
+                    response.Message = "Error Description = Charge Amount is incorrect - CHRGAMNT <> DOCAMNT - CASHAMNT - CHEKAMNT - CRCRDAMT - DISTKNAM";
+                }  
+                else if (ex.Message.Contains("Error Number = 698"))
+                {
+                    response.Message = "Error Description = Tax record already exists in the PM Tax Work Table - PM10500";
+                } else if (ex.Message.Contains("Error Number = 7148"))
+                {
+                    response.Message = "Error Description = Duplicate Tax Node ID in the RM10601 table";
                 }
                 else
                     response.Message = ex.Message;

@@ -8,7 +8,7 @@ namespace IntegratorWithGp.Core.Models.SalesTransactions.Sales
         public string DOCUMENTNUMBER { get; set; }
         public string DOCUMENTDATE { get; set; }
 
-        public string BACHNUMBER { get; set; }
+        public string BATCHNUMBER { get; set; }
         public string CUSOMERNUMBRER { get; set; }
         public decimal DOCUMENTAMOUNT { get; set; }
         public decimal SALESAMOUNT { get; set; }
@@ -18,7 +18,7 @@ namespace IntegratorWithGp.Core.Models.SalesTransactions.Sales
         //public decimal TRADEDISCOUNTAMOUNT { get; set; }
         //public decimal FREIGHTAMOUNT { get; set; }
         //public decimal MISCELLANEOUSAMOUNT { get; set; }
-        //public decimal TAXAMOUNT { get; set; }
+        public decimal TAXAMOUNT { get; set; }
         public string  DOCUMENTDESCRIPTION  { get; set; }
         public static implicit operator taRMTransaction(RMTransaction receivableTransaction) =>
             new taRMTransaction
@@ -26,14 +26,14 @@ namespace IntegratorWithGp.Core.Models.SalesTransactions.Sales
                 RMDTYPAL = receivableTransaction.RMDTYPAL, 
                 DOCNUMBR = receivableTransaction.DOCUMENTNUMBER,
                 DOCDATE = receivableTransaction.DOCUMENTDATE,
-                BACHNUMB = receivableTransaction.BACHNUMBER,
+                BACHNUMB = receivableTransaction.BATCHNUMBER,
                 CUSTNMBR = receivableTransaction.CUSOMERNUMBRER,
                 DOCAMNT = receivableTransaction.DOCUMENTAMOUNT,
                 SLSAMNT = receivableTransaction.SALESAMOUNT,
-               // TAXAMNT = receivableTransaction.TAXAMOUNT,
                 TAXSCHID = receivableTransaction.TAXSCHID,
                 CURNCYID = receivableTransaction.CURNCYID,
                 DOCDESCR=receivableTransaction.DOCUMENTDESCRIPTION
+               ,TAXAMNT = receivableTransaction.TAXAMOUNT
             };
     }
 }
