@@ -81,6 +81,10 @@ namespace IntegratorWithGp.Services.Services.Sales
                 else if (ex.Message.Contains("Error Number = 698"))
                 {
                     response.Message = "Error Description = Tax record already exists in the PM Tax Work Table - PM10500";
+                } 
+                else if (ex.Message.Contains("Error Number = 1341"))
+                {
+                    response.Message = "Error: Account does not exist for the provided Account Index (DSTINDX). The ACCOUNTNUMBER is either missing, empty, or invalid.";
                 }
                 else
                     response.Message = ex.Message;
